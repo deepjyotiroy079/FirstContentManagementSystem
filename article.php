@@ -27,6 +27,7 @@
                             <div class="card-header">
                                 <h4 class="my-0 font-weight-normal"><?php echo $row['article_title']; ?></h4>
                             </div>
+                            <img class="card-img-top" src="<?php echo $row['article_img']; ?>" height="500px" alt="Card image cap">
                             <div class="card-body text-left">
                                 <h5>Posted<small class="text-muted"> <?php echo date('l jS', $row['article_timestamp']); ?></small></h5>
                                 <p class="lead"> <?php echo $row['article_content']; ?></p>
