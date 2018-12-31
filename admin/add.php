@@ -52,7 +52,7 @@
                                 <label for="title" class="sr-only">Article's Title</label>
                                 <input type="text" name="title" class="form-control" placeholder="Enter a title" required autofocus="">
                                 <br /> <br />
-                                <input type="file" class="form-control" name="file">
+                                <input type="file" class="custom-file" name="file">
                                 <br /><br />
                                 <textarea type="text" name="content" class="md-textarea form-control" rows="15" cols="40" placeholder="Content" required></textarea>
                                 <br /><br />
