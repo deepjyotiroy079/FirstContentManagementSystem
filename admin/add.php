@@ -6,12 +6,12 @@
         if(isset($_POST['title'])&&isset($_POST['content'])) {
             $title = $_POST['title'];
             $content = $_POST['content'];
-            $file_name = $_FILES['file']['name'];
+            $filename = $_FILES['file']['name'];
             $file_size = $_FILES['file']['size'];
             $file_type = $_FILES['file']['type'];
             $file_tmp_location = $_FILES['file']['tmp_name']; // get the temporary variable
             
-            $file_ext = explode('.', $file_name); // this willl split
+            $file_ext = explode('.', $filename); // this willl split
             $file_actual_ext = strtolower(end($file_ext));
             $allowed = array('jpg', 'jpeg', 'png');
             
